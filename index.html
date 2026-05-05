@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cálculo de Resolução LED</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Calculadora LED</h1>
+        <p>Dimensionamento de Resolução de Painéis</p>
+      </header>
+      <main>
+        <form>
+          <!-- Dimensões totais do painel -->
+          <div>
+            <label for="comprimento">Comprimento do painel</label>
+            <input type="number" id="comprimento" placeholder="Ex: 6 (m)" />
+          </div>
+          <div>
+            <label for="altura">Altura do painel</label>
+            <input type="number" id="altura" placeholder="Ex: 3 (m)" />
+          </div>
+
+          <!-- Especificações do módulo LED -->
+          <div class="duas-colunas">
+            <label for="placa">Pixel Pitch do módulo</label>
+            <input type="number" id="placa" placeholder="Ex: 2.9 (mm)" />
+          </div>
+          <div>
+            <label for="comprimentoDaPlaca">Comprimento da placa</label>
+            <input type="number" id="comprimentoDaPlaca" placeholder="Ex: 500 (mm)" />
+          </div>
+          <div>
+            <label for="alturaDaPlaca">Altura da placa</label>
+            <input type="number" id="alturaDaPlaca" placeholder="Ex: 500 (mm)" />
+          </div>
+          <div class="duas-colunas">
+            <button type="button" id="botaoCalcular" onclick="calcularResolucao()">Calcular resolução</button>
+          </div>
+        </form>
+        <section class="resultado" id="resultado"></section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
