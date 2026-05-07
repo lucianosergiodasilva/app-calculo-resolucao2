@@ -90,10 +90,6 @@ form div {
   gap: 8px;
 }
 
-form div:nth-child(3) {
-  /* grid-column: span 2; */
-}
-
 label {
   font-size: 0.8rem;
   font-weight: 600;
@@ -194,4 +190,13 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  form {
+    grid-template-columns: 1fr;
+  }
+  .duas-colunas {
+    grid-column: span 1;
+  }
 }
