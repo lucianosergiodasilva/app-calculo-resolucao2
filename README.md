@@ -8,6 +8,8 @@
 
 Este projeto consiste em uma calculadora web interativa desenvolvida como um estudo de caso para resolver um problema comum no planejamento e instalação de painéis de LED: o dimensionamento exato da resolução com base nas características físicas e técnicas do painel.
 
+👀 <a href="https://lucianosergiodasilva.github.io/app-calculo-resolucao2/" target="_blank">Clique aqui para ver o projeto funcionando</a>
+
 ## Problema que o Projeto Resolve
 
 No contexto de projetos de painéis de LED, o cálculo manual da resolução recomendada pode ser complexo e propenso a erros. Ele envolve considerar as dimensões físicas desejadas para o painel (comprimento e altura), o "pixel pitch" (a distância entre os centros dos LEDs), e as dimensões físicas das placas modulares individuais que formam o painel completo.
